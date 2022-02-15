@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { render } from '@testing-library/react';
+import Header from './components/Header';
+import CHeader from './components/CHeader';
+import Channel from './components/Channel';
+import FunctionClick from './components/FunctionClick';
+import CFunctionClick from './components/CFunctionClick';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component
+{
+  render()
+  {
+    return(
+      <div className='App'>
+        <Header name="harsh" /> 
+        <CHeader name="harsh" />
+        <Channel />
+        <FunctionClick />
+        <CFunctionClick roll="27" />
+      </div>
+    )
+  }
+  
 }
 
 export default App;
