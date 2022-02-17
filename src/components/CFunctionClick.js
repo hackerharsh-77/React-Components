@@ -18,7 +18,7 @@ export class CFunctionClick extends Component {
         console.log("hello harsh",this.props.roll); 
     }
   render() {
-      const numbers=[3,4,5];
+      const numbers=this.props.numbers;
       const newNumbers=numbers.map(function(){
           return <li>{numbers}</li>
       })
