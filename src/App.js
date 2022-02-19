@@ -8,6 +8,8 @@ import FunctionClick from './components/FunctionClick';
 import CFunctionClick from './components/CFunctionClick';
 import Stylesheet from './components/Stylesheet';
 import Forms from './components/Forms';
+import Routing from './components/Routing';
+import LifeCycleA from './components/LifeCycleA';
 
 class App extends React.Component
 {
@@ -22,7 +24,9 @@ class App extends React.Component
         <FunctionClick />
         <CFunctionClick roll="27" numbers={numbers} /> */}
         {/* <Stylesheet isValue={true}/> */}
-        <Forms />
+        {/* <Forms /> */}
+        {/* <Routing /> */}
+        <LifeCycleA />
       </div>
     )
   }
